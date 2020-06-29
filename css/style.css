@@ -1,0 +1,149 @@
+@font-face {
+    font-family: Avenir;
+    src: local(Avenir-Medium), url(/asset/fonts/Avenir-Medium.otf);
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: Avenir;
+    src: local(Avenir-Black), url(/asset/fonts/Avenir-Black.otf);
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: local(Poppins-Bold), url(/asset/fonts/Poppins-Bold.ttf);
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+body,
+* {
+    margin: 0;
+}
+
+#home {
+    height: 100vh;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#home h1 {
+    width: 311px;
+    margin-bottom: 0;
+    font-family: Poppins;
+    font-size: 50px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+#home p {
+    max-width: 627px;
+    margin: 24px 0;
+    font-family: Avenir;
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.14;
+    letter-spacing: 0.7px;
+    text-align: left;
+    color: #000000;
+}
+
+#home .container {
+    margin: auto;
+    padding: 2em;
+}
+
+.btn-kastil {
+    padding: 12px 20px;
+}
+
+.btn-kastil-outline-black {
+    color: black;
+    border: solid 2px black;
+}
+
+#home .btn-kastil {
+    font-family: Avenir;
+    font-size: 10px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.22;
+    letter-spacing: 0.45px;
+    text-align: center;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+#home .btn-kastil .icon {
+    font-size: 10px;
+}
+
+nav {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+nav ul {
+    padding: 0;
+    margin-bottom: 0;
+}
+
+nav li {
+    display: inline;
+    font-family: Avenir;
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 15px;
+    letter-spacing: 1.2px;
+    text-align: left;
+    color: #000000;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+nav .burger{
+    display: none;
+}
+
+nav li:not(:last-child){
+    margin: 24px;
+}
+
+nav .burger{
+    margin:0 !important;
+}
+
+nav .clear{
+    display: none;
+}
+
+nav li:last-child{
+    margin-left: 24px;
+}
+
+nav .icon{
+    font-size: 24px;
+}
+
