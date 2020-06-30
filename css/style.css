@@ -75,7 +75,23 @@ body,
 
 .btn-kastil-outline-black {
     color: black;
+    display: inline-block;
     border: solid 2px black;
+    box-shadow: rgba(0, 0, 0, 1) 0px 0px;
+    -webkit-transition: all 0.1s ease-in;
+    -moz-transition: all 0.1s ease-in;
+    -o-transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in;
+}
+
+.btn-kastil-outline-black:hover{
+    transform: translate(-3px,-3px);
+    box-shadow: rgba(0, 0, 0, 1) 3px 3px;
+}
+
+.btn-kastil-outline-black:active{
+    transform: translate(0px,0px);
+    box-shadow: rgba(0, 0, 0, 1) 0px 0px;
 }
 
 #home .btn-kastil {
