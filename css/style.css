@@ -1,27 +1,3 @@
-@font-face {
-    font-family: Avenir;
-    src: local(Avenir-Medium), url(/asset/fonts/Avenir-Medium.otf);
-    font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
-}
-
-@font-face {
-    font-family: Avenir;
-    src: local(Avenir-Black), url(/asset/fonts/Avenir-Black.otf);
-    font-weight: 900;
-    font-style: normal;
-    font-stretch: normal;
-}
-
-@font-face {
-    font-family: Poppins;
-    src: local(Poppins-Bold), url(/asset/fonts/Poppins-Bold.ttf);
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-}
-
 body,
 * {
     margin: 0;
@@ -29,17 +5,15 @@ body,
 
 #home {
     height: 100vh;
-    background-color: rgba(255, 255, 255, 0.35);
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 #home h1 {
-    width: 311px;
     margin-bottom: 0;
-    font-family: Poppins;
-    font-size: 50px;
+    font-family: Muli;
+    font-size: 42px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -53,9 +27,9 @@ body,
 #home p {
     max-width: 627px;
     margin: 24px 0;
-    font-family: Avenir;
+    font-family: 'Muli', sans-serif;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 300;
     font-stretch: normal;
     font-style: normal;
     line-height: 2.14;
@@ -64,7 +38,7 @@ body,
     color: #000000;
 }
 
-#home .container {
+.container {
     margin: auto;
     padding: 2em;
 }
@@ -84,18 +58,18 @@ body,
     transition: all 0.1s ease-in;
 }
 
-.btn-kastil-outline-black:hover{
-    transform: translate(-3px,-3px);
+.btn-kastil-outline-black:hover {
+    transform: translate(-3px, -3px);
     box-shadow: rgba(0, 0, 0, 1) 3px 3px;
 }
 
-.btn-kastil-outline-black:active{
-    transform: translate(0px,0px);
+.btn-kastil-outline-black:active {
+    transform: translate(0px, 0px);
     box-shadow: rgba(0, 0, 0, 1) 0px 0px;
 }
 
 #home .btn-kastil {
-    font-family: Avenir;
+    font-family: 'Muli', sans-serif;
     font-size: 10px;
     font-weight: 900;
     font-stretch: normal;
@@ -126,7 +100,7 @@ nav ul {
 
 nav li {
     display: inline;
-    font-family: Avenir;
+    font-family: 'Muli', sans-serif;
     font-size: 12px;
     font-weight: 500;
     font-stretch: normal;
@@ -139,54 +113,195 @@ nav li {
     cursor: pointer;
 }
 
-nav .burger{
+nav .burger {
     display: none;
 }
 
-nav li:not(:last-child){
+nav li:not(:last-child) {
     margin: 24px;
 }
 
-nav .burger{
-    margin:0 !important;
+nav .burger {
+    margin: 0 !important;
 }
 
-nav .clear{
+nav .clear {
     display: none;
 }
 
-nav li:last-child{
+nav li:last-child {
     margin-left: 24px;
 }
 
-nav .icon{
+nav .icon {
     font-size: 24px;
 }
 
-.logo-container{
+.logo-container {
     height: 48px;
 }
 
-.logo-kastil{
+.logo-kastil {
     height: 100%;
 }
 
-
-.banners .carousel-item{
+.banners .carousel-item {
     z-index: -1;
     position: fixed;
     height: 100vh;
 }
 
-.banners img{
+.banners img {
     object-fit: cover;
+    object-position: bottom;
     height: 100vh;
     width: 100vw;
 }
 
-.carousel-control-prev, .carousel-control-next{
+.carousel-control-prev,
+.carousel-control-next {
     width: 88px;
     margin-top: 15vh;
     height: 90vh;
     z-index: 1;
+}
+
+#our-goals {
+    background-color: #fff;
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+.label {
+    position: relative;
+    font-family: Muli;
+    font-size: 20px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #64cae2;
+    padding: 0.5em 0;
+}
+
+.label::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 40px;
+    border-bottom: 3px solid #64cae2;
+}
+
+#our-goals .description {
+    max-width: 845px;
+    font-family: Muli;
+    font-size: 38px;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.27;
+    letter-spacing: 0.88px;
+    text-align: left;
+    color: #212121;
+}
+
+#value {
+    background-color: #fff;
+}
+
+#value .background {
+    background: url(../asset/img/Polygon-Value.png) no-repeat top left;
+    padding-top: 4em;
+}
+
+.values-container {
+    flex: 1;
+    display: flex;
+    overflow: auto;
+    margin-right: auto;
+    padding: 3em 0em 8em 0em;
+}
+
+.values-container::-webkit-scrollbar {
+    display: none;
+}
+
+.values {
+    display: flex;
+    min-height: min-content;
+}
+
+.card-value {
+    width: 500px;
+    height: 100%;
+    box-shadow: 10px 20px 90px 0 rgba(0, 0, 0, 0.05);
+    padding: 40px 32px;
+    background-color: #ffffff;
+}
+
+.card-value .head {
+    font-family: Muli;
+    font-size: 24px;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: 0.48px;
+    text-align: left;
+    color: #64cae2;
+    margin-bottom: 1em;
+}
+
+.card-value .body {
+    font-family: Muli;
+    font-size: 16px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.75;
+    letter-spacing: 0.64px;
+    text-align: left;
+    color: #333333;
+}
+
+#about-us {
+    background-color: #514e5c;
+}
+
+#about-us .label {
+    color: white;
+}
+
+#about-us .label::before {
+    border-color: white;
+}
+
+#about-us .description {
+    margin-top: 3em;
+    max-width: 674px;
+    font-family: Muli;
+    font-size: 16px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.72;
+    letter-spacing: 0.72px;
+    text-align: left;
+    color: #ffffff;
+}
+
+#contact {
+    background-color: rgb(88, 89, 91);
+}
+
+.color-blue {
+    color: #64cae2;
+}
+
+.color-white {
+    color: #fff;
 }
