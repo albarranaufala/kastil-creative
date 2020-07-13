@@ -1,3 +1,10 @@
+html,body {
+    overflow-x: hidden;
+}
+body{
+    position: relative;
+}
+
 body,
 * {
     margin: 0;
@@ -219,11 +226,9 @@ nav .icon {
 }
 
 .values-container {
-    flex: 1;
     display: flex;
-    overflow: auto;
-    margin-right: auto;
     padding: 3em 0em 8em 0em;
+    white-space: normal;
 }
 
 .values-container::-webkit-scrollbar {
@@ -237,7 +242,6 @@ nav .icon {
 
 .card-value {
     width: 450px;
-    height: 100%;
     box-shadow: 10px 20px 90px 0 rgba(0, 0, 0, 0.05);
     padding: 40px 32px;
     background-color: #ffffff;
@@ -300,7 +304,8 @@ nav .icon {
     padding-bottom: 4em;
 }
 
-#our-services .head {
+#our-services .head,
+#team .head {
     font-family: Muli;
     font-size: 32px;
     font-weight: 700;
@@ -314,7 +319,8 @@ nav .icon {
     margin-bottom: 0.5em;
 }
 
-#our-services .caption {
+#our-services .caption,
+#team .caption {
     margin: auto;
     max-width: 494px;
     font-family: Muli;
@@ -382,6 +388,39 @@ nav .icon {
     text-align: left;
     color: #ffffff;
     text-transform: uppercase;
+}
+
+#lets-talk {
+    background-color: #514e5c;
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+#lets-talk p {
+    font-family: Muli;
+    font-size: 32px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: 0.72px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 0;
+}
+
+#lets-talk a {
+    color: #64cae2;
+}
+
+#lets-talk::hover a {
+    color: #64cae2;
+}
+
+#team {
+    background-color: #fff;
+    padding-top: 4em;
+    padding-bottom: 4em;
 }
 
 #contact {
