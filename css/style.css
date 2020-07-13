@@ -70,8 +70,8 @@ body,
 
 #home .btn-kastil {
     font-family: 'Muli', sans-serif;
-    font-size: 10px;
-    font-weight: 900;
+    font-size: 12px;
+    font-weight: 700;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.22;
@@ -236,7 +236,7 @@ nav .icon {
 }
 
 .card-value {
-    width: 500px;
+    width: 450px;
     height: 100%;
     box-shadow: 10px 20px 90px 0 rgba(0, 0, 0, 0.05);
     padding: 40px 32px;
@@ -258,7 +258,7 @@ nav .icon {
 
 .card-value .body {
     font-family: Muli;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 300;
     font-stretch: normal;
     font-style: normal;
@@ -292,6 +292,96 @@ nav .icon {
     letter-spacing: 0.72px;
     text-align: left;
     color: #ffffff;
+}
+
+#our-services {
+    background-color: #fff;
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+#our-services .head {
+    font-family: Muli;
+    font-size: 32px;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.17;
+    letter-spacing: 1.08px;
+    text-align: center;
+    color: #212121;
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+}
+
+#our-services .caption {
+    margin: auto;
+    max-width: 494px;
+    font-family: Muli;
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.75;
+    letter-spacing: 0.8px;
+    text-align: center;
+    color: #58595b;
+    margin-bottom: 2em;
+}
+
+.service-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+}
+
+@media (max-width: 991.98px) {
+    .service-container {
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 1fr 1fr;
+    }
+}
+
+.service-item {
+    position: relative;
+}
+
+.service-item::before {
+    content: "";
+    padding-bottom: 100%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.service-item div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+}
+
+.service-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.service-item p {
+    margin-bottom: 0;
+    font-family: Muli;
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #ffffff;
+    text-transform: uppercase;
 }
 
 #contact {
