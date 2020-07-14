@@ -30,6 +30,9 @@
     .responsive li a {
         color: white;
     }
+    .responsive li a:hover {
+        color: #64cae2;
+    }
     .responsive li:first-child {
         display: none;
     }
