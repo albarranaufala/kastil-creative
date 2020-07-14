@@ -27,6 +27,9 @@
         display: block;
         color: white;
     }
+    .responsive li a {
+        color: white;
+    }
     .responsive li:first-child {
         display: none;
     }
