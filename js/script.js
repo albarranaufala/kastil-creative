@@ -7,6 +7,7 @@ let decrementMarquee = 1;
 
 AOS.init({
     duration: 1200,
+    once: true
 });
 
 burgerBtn.addEventListener('click', function(e) {
