@@ -300,10 +300,22 @@ nav .icon {
     color: #ffffff;
 }
 
+#about-us img{
+    position: absolute;
+    top:0;
+    right:2em;
+}
+
 #our-services {
     background-color: #fff;
     padding-top: 4em;
     padding-bottom: 4em;
+}
+
+@media (min-width: 1200px) { 
+    #our-services{
+        padding-top: 12em;
+    }
 }
 
 #our-services .head,
