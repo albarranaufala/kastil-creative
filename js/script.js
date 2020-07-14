@@ -5,6 +5,10 @@ const body = document.querySelector('body');
 const valuesContainer = document.querySelector('.values-container');
 let decrementMarquee = 1;
 
+AOS.init({
+    duration: 1200,
+});
+
 burgerBtn.addEventListener('click', function(e) {
     navbar.classList.add('responsive');
     body.classList.add('overflow-hidden');

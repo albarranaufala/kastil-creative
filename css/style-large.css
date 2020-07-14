@@ -16,6 +16,8 @@
     nav.responsive {
         background-color: rgba(0, 0, 0, 0.8);
         z-index: 2;
+        height: 100vh;
+        position: fixed;
     }
     .responsive ul {
         flex-direction: column;
