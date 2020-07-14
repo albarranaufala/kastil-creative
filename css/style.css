@@ -557,6 +557,7 @@ nav .icon {
 
 #contact input {
     border: solid 1px #fff;
+    border-radius: 4px;
     color: #fff;
     width: 100%;
     background-image: none;
