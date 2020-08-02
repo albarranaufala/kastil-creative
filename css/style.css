@@ -294,42 +294,9 @@ nav .icon {
     font-size: 32px;
 }
 
-#about-us {
-    background-color: #514e5c;
-}
-
-#about-us .label {
-    color: white;
-}
-
-#about-us .label::before {
-    border-color: white;
-}
-
-#about-us .description {
-    margin-top: 3em;
-    max-width: 674px;
-    font-family: Muli;
-    font-size: 16px;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.72;
-    letter-spacing: 0.72px;
-    text-align: left;
-    color: #ffffff;
-}
-
-#about-us img {
-    position: absolute;
-    top: 0;
-    right: 2em;
-}
-
 #our-services {
     background-color: #000;
     color: #fff;
-    z-index: 9999999;
 }
 
 #our-services .label {
@@ -386,6 +353,20 @@ nav .icon {
     filter: brightness(60%);
 }
 
+#clients {
+    background-color: #000;
+    color: #fff;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+#clients .label {
+    text-transform: uppercase;
+    font-family: AvenirBold;
+    font-size: 50px;
+    margin-bottom: 2rem;
+}
+
 #lets-talk {
     background-color: #000;
     padding-bottom: 8em;
@@ -402,9 +383,16 @@ nav .icon {
 }
 
 #team {
-    background-color: #fff;
-    padding-top: 4em;
-    padding-bottom: 4em;
+    background-color: #000;
+    padding-bottom: 8em;
+    color: #fff;
+}
+
+#team .label {
+    text-transform: uppercase;
+    font-family: AvenirBold;
+    font-size: 50px;
+    margin-bottom: 2rem;
 }
 
 #team .team-container {
@@ -439,21 +427,20 @@ nav .icon {
 }
 
 #team .team-name {
-    font-family: Roboto;
+    font-family: AvenirLight;
     font-size: 18px;
-    font-weight: 500;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.17;
     letter-spacing: 0.36px;
     text-align: center;
-    color: #333333;
+    color: #fff;
     margin-top: 1em;
     text-transform: uppercase;
 }
 
 #team .team-position {
-    font-family: Muli;
+    font-family: AvenirBold;
     font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
@@ -461,18 +448,20 @@ nav .icon {
     line-height: 1.71;
     letter-spacing: 0.28px;
     text-align: center;
-    color: #58595b;
+    color: #fff;
     margin-top: 0.25em;
+    text-transform: uppercase;
 }
 
 #contact {
-    background-color: rgb(88, 89, 91);
-    padding-top: 4em;
+    background-color: #000;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
 }
 
 #contact .head {
-    font-family: Muli;
-    font-size: 32px;
+    font-family: AvenirBold;
+    font-size: 18px;
     font-weight: 700;
     font-stretch: normal;
     font-style: normal;
@@ -481,13 +470,13 @@ nav .icon {
     text-align: center;
     color: #fff;
     text-transform: uppercase;
-    margin-bottom: 0.5em;
+    margin-bottom: 2em;
 }
 
 #contact .caption {
     margin: auto;
     max-width: 494px;
-    font-family: Muli;
+    font-family: AvenirLight;
     font-size: 14px;
     font-weight: 300;
     font-stretch: normal;
@@ -500,7 +489,7 @@ nav .icon {
 }
 
 #contact label {
-    font-family: Muli;
+    font-family: AvenirLight;
     font-size: 14px;
     font-weight: 300;
     font-stretch: normal;
@@ -533,7 +522,7 @@ nav .icon {
     border: none;
     border-radius: 0 4px 4px 0;
     background-color: #ffffff;
-    font-family: Muli;
+    font-family: AvenirLight;
     font-weight: 700;
     font-stretch: normal;
     font-style: normal;
@@ -551,7 +540,7 @@ nav .icon {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: Muli;
+    font-family: AvenirLight;
     font-size: 12px;
     font-weight: 300;
     font-stretch: normal;
@@ -601,3 +590,10 @@ strong{
     font-family: AvenirMedium;
 }
 
+a.color-white {
+    transition: all 0.25s;
+}
+
+a.color-white:hover{
+    color: #64cae2;
+}
