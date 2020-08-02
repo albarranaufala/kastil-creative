@@ -316,9 +316,17 @@ nav .icon {
     padding: 1rem;
     text-transform: uppercase;
     display: flex;
-    align-items:flex-end;
-    font-family: AvenirRegular;
+    align-items:center;
+    justify-content: center;
+    font-family: AvenirMedium;
+    font-size: 18px;
+    letter-spacing: 2px;
     z-index: 1;
+    opacity: 0;
+    transition: all 0.25s;
+}
+.service-name:hover {
+    opacity: 1;
 }
 
 @media (max-width: 767.98px) {
