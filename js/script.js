@@ -87,7 +87,7 @@ clientsImg.forEach(img => {
     setInterval(function() {
         setTimeout(fadeOut(img), 1000);
         
-    }, getRndInteger(2000, 6000));
+    }, getRndInteger(2500, 6000));
 });
 
 function getRndInteger(min, max) {

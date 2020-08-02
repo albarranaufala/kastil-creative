@@ -1,26 +1,22 @@
 @font-face {
     font-family: AvenirLight;
-    src: url(/asset/fonts/avenir/Avenir\ Next\ LT\ W04\ Light.ttf);
+    src: url('../asset/fonts/avenir/Avenir\ Next\ LT\ W04\ Light.ttf');
     font-weight: 400;
 }
 @font-face {
     font-family: AvenirRegular;
-    src: url(/asset/fonts/avenir/AvenirNextLTPro-Regular.otf);
+    src: url('../asset/fonts/avenir/AvenirNextLTPro-Regular.otf');
     font-weight: 500;
 }
 @font-face {
     font-family: AvenirMedium;
-    src: url(/asset/fonts/avenir/AvenirNextLTPro-Demi.otf);
+    src: url('../asset/fonts/avenir/AvenirNextLTPro-Demi.otf');
     font-weight: 600;
 }
 @font-face {
     font-family: AvenirBold;
-    src: url(/asset/fonts/avenir/AvenirNextLTPro-Bold.otf);
+    src: url('../asset/fonts/avenir/AvenirNextLTPro-Bold.otf');
     font-weight: 700;
-}
-@font-face {
-    font-family: AvenirBlack;
-    src: url(/asset/fonts/avenir/Avenir\ Black.ttf);
 }
 
 html {
