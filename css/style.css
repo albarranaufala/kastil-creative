@@ -214,8 +214,8 @@ nav .icon {
 
 #our-goals {
     background-color: #000;
-    padding-top: 8em;
-    padding-bottom: 8em;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
 }
 
 #our-goals .label {
@@ -369,7 +369,7 @@ nav .icon {
 
 #lets-talk {
     background-color: #000;
-    padding-bottom: 8em;
+    padding-bottom: 8rem;
 }
 
 .border-white{
@@ -384,7 +384,7 @@ nav .icon {
 
 #team {
     background-color: #000;
-    padding-bottom: 8em;
+    padding-bottom: 8rem;
     color: #fff;
 }
 
@@ -402,12 +402,12 @@ nav .icon {
 }
 
 #team .team-item {
-    margin: 1.2em;
+    margin: 0.5rem;
 }
 
 #team .team-img-container {
-    width: 220px;
-    height: 300px;
+    width: 195px;
+    height: 280px;
     position: relative;
 }
 
@@ -428,7 +428,7 @@ nav .icon {
 
 #team .team-name {
     font-family: AvenirLight;
-    font-size: 18px;
+    font-size: 14px;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.17;
@@ -440,7 +440,7 @@ nav .icon {
 }
 
 #team .team-position {
-    font-family: AvenirBold;
+    font-family: AvenirMedium;
     font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
