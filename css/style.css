@@ -59,7 +59,7 @@ body,
 }
 
 #home p {
-    max-width: 627px;
+    max-width: 395px;
     margin: 24px 0;
     font-family: AvenirLight;
     font-size: 14px;
@@ -118,12 +118,16 @@ nav {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 2em;
+    padding: 2rem;
 }
 
 nav ul {
     padding: 0;
     margin-bottom: 0;
+}
+
+nav ul :not(.burger){
+    margin: auto 0;
 }
 
 nav li {
@@ -135,7 +139,6 @@ nav li {
     line-height: 15px;
     letter-spacing: 1.2px;
     text-align: left;
-    text-transform: uppercase;
     cursor: pointer;
 }
 
@@ -153,7 +156,7 @@ nav .burger {
 }
 
 nav li:not(:last-child) {
-    margin: 24px;
+    margin: 18px;
 }
 
 nav .burger {
@@ -165,7 +168,7 @@ nav .clear {
 }
 
 nav li:last-child {
-    margin-left: 24px;
+    margin-left: 18px;
 }
 
 nav .icon {
@@ -210,8 +213,8 @@ nav .icon {
 
 #our-goals {
     background-color: #000;
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
 }
 
 #our-goals .label {
@@ -250,7 +253,7 @@ nav .icon {
 #our-goals .description {
     max-width: 845px;
     font-family: AvenirLight;
-    font-size: 38px;
+    font-size: 32px;
     letter-spacing: 0.88px;
     text-align: left;
     color: #fff;
@@ -267,7 +270,7 @@ nav .icon {
 #value {
     background-color: #000;
     color: #fff;
-    padding-bottom: 8rem;
+    padding-bottom: 12rem;
 }
 
 #value .left {
@@ -360,8 +363,8 @@ nav .icon {
 #clients {
     background-color: #000;
     color: #fff;
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
 }
 
 #clients .label {
@@ -373,7 +376,7 @@ nav .icon {
 
 #lets-talk {
     background-color: #000;
-    padding-bottom: 8rem;
+    padding-bottom: 12rem;
 }
 
 .border-white{
@@ -388,7 +391,7 @@ nav .icon {
 
 #team {
     background-color: #000;
-    padding-bottom: 8rem;
+    padding-bottom: 12rem;
     color: #fff;
 }
 

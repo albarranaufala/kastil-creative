@@ -82,24 +82,34 @@ const clientsLogo = ['asset/logo/clients/alattulisdotcom.png'
                     , 'asset/logo/clients/yongbengkalis.png'];
 
 const clientsImg = document.querySelectorAll('#clients img');
-clientsImg.forEach(img => {
-    img.src = clientsLogo[getRndInteger(0, clientsLogo.length)];
+let clientsIndex = [0,0,0,0,0,0];
+clientsImg.forEach((img, index) => {
+    let chooseClient = getRndInteger(0, clientsLogo.length, clientsIndex);
+    img.src = clientsLogo[chooseClient];
+    clientsIndex[index] = chooseClient;
     setInterval(function() {
-        setTimeout(fadeOut(img), 1000);
-        
-    }, getRndInteger(2500, 6000));
+        setTimeout(fadeOut(img, index, clientsIndex), 1000);
+    }, getRndInteger(2500, 6000, [0]));
 });
 
-function getRndInteger(min, max) {
-    return Math.floor(Math.random() * (max - min)) + min;
+function getRndInteger(min, max, indexes) {
+    let rand = Math.floor(Math.random() * (max - min)) + min;
+    indexes.forEach(index => {
+        if(index == rand){
+            return getRndInteger(min, max, indexes);
+        }
+    });
+    return rand;
 }
 
-function fadeOut(el) {
+function fadeOut(el, index, indexes) {
     el.style.opacity = 1;
     (function fade() {
         if ((el.style.opacity -= .02) < 0) {
             el.style.display = "none";
-            el.src = clientsLogo[getRndInteger(0, clientsLogo.length)];
+            let chooseClient = getRndInteger(0, clientsLogo.length, indexes);
+            el.src = clientsLogo[chooseClient];
+            clientsIndex[index] = chooseClient;
             fadeIn(el);
         } else {
             requestAnimationFrame(fade);
