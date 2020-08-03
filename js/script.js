@@ -55,37 +55,39 @@ toTop.addEventListener('click', function(e) {
     document.documentElement.scrollTop = 0;
 })
 
-const clientsLogo = ['asset/logo/clients/alattulisdotcom.png'
-                    , 'asset/logo/clients/bankindonesia.png'
-                    , 'asset/logo/clients/caesarikitchen.png'
-                    , 'asset/logo/clients/circlecoffee.png'
-                    , 'asset/logo/clients/dynastyadvertising.png'
-                    , 'asset/logo/clients/janganlupasarapan.png'
-                    , 'asset/logo/clients/joeyalmond.png'
-                    , 'asset/logo/clients/kemenpora.png'
-                    , 'asset/logo/clients/konsulatmalaysiapekanbaru.png'
-                    , 'asset/logo/clients/kpknl.png'
-                    , 'asset/logo/clients/luxuryhydroclean.png'
-                    , 'asset/logo/clients/mura.png'
-                    , 'asset/logo/clients/nadiin.png'
-                    , 'asset/logo/clients/nusantaramandiri.png'
-                    , 'asset/logo/clients/onana.png'
-                    , 'asset/logo/clients/oxuskem.png'
-                    , 'asset/logo/clients/peterseli.png'
-                    , 'asset/logo/clients/prive.png'
-                    , 'asset/logo/clients/rafaira.png'
-                    , 'asset/logo/clients/riaurhythm.png'
-                    , 'asset/logo/clients/teknongsoya.png'
-                    , 'asset/logo/clients/tupperware.png'
-                    , 'asset/logo/clients/wishinteriorarchitect.png'
-                    , 'asset/logo/clients/yoghurt.png'
-                    , 'asset/logo/clients/yongbengkalis.png'];
+const baseUrlClient = 'asset/logo/clients/';
+const clientsLogo = ['alattulisdotcom.png'
+                    , 'bankindonesia.png'
+                    , 'caesarikitchen.png'
+                    , 'circlecoffee.png'
+                    , 'dynastyadvertising.png'
+                    , 'janganlupasarapan.png'
+                    , 'joeyalmond.png'
+                    , 'kemenpora.png'
+                    , 'konsulatmalaysiapekanbaru.png'
+                    , 'kpknl.png'
+                    , 'luxuryhydroclean.png'
+                    , 'mura.png'
+                    , 'nadiin.png'
+                    , 'nusantaramandiri.png'
+                    , 'onana.png'
+                    , 'oxuskem.png'
+                    , 'peterseli.png'
+                    , 'prive.png'
+                    , 'rafaira.png'
+                    , 'riaurhythm.png'
+                    , 'teknongsoya.png'
+                    , 'tupperware.png'
+                    , 'wishinteriorarchitect.png'
+                    , 'yoghurt.png'
+                    , 'yongbengkalis.png'];
 
 const clientsImg = document.querySelectorAll('#clients img');
 let clientsIndex = [0,0,0,0,0,0];
 clientsImg.forEach((img, index) => {
     let chooseClient = getRndInteger(0, clientsLogo.length, clientsIndex);
-    img.src = clientsLogo[chooseClient];
+    img.src = baseUrlClient + clientsLogo[chooseClient];
+    img.alt = clientsLogo[chooseClient];
     clientsIndex[index] = chooseClient;
     setInterval(function() {
         setTimeout(fadeOut(img, index, clientsIndex), 1000);
@@ -108,7 +110,8 @@ function fadeOut(el, index, indexes) {
         if ((el.style.opacity -= .02) < 0) {
             el.style.display = "none";
             let chooseClient = getRndInteger(0, clientsLogo.length, indexes);
-            el.src = clientsLogo[chooseClient];
+            el.src = baseUrlClient + clientsLogo[chooseClient];
+            el.alt = clientsLogo[chooseClient];
             clientsIndex[index] = chooseClient;
             fadeIn(el);
         } else {
