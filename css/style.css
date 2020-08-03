@@ -126,7 +126,7 @@ nav ul {
     margin-bottom: 0;
 }
 
-nav ul :not(.burger){
+nav ul{
     margin: auto 0;
 }
 
