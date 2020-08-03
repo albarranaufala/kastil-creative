@@ -91,7 +91,7 @@ clientsImg.forEach((img, index) => {
     clientsIndex[index] = chooseClient;
     setInterval(function() {
         setTimeout(fadeOut(img, index, clientsIndex), 1000);
-    }, getRndInteger(2500, 6000, [0]));
+    }, getRndInteger(4000, 7000, [0]));
 });
 
 function getRndInteger(min, max, indexes) {
