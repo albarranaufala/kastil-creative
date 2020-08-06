@@ -59,13 +59,13 @@ body,
 }
 
 #home p {
-    max-width: 395px;
+    max-width: 425px;
     margin: 24px 0;
     font-family: AvenirLight;
     font-size: 14px;
     font-stretch: normal;
     font-style: normal;
-    line-height: 2.14;
+    line-height: 1.8;
     letter-spacing: 0.7px;
     text-align: left;
     color: #fff;
