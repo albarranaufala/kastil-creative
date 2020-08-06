@@ -46,7 +46,7 @@ body,
 
 #home h1 {
     margin-bottom: 0;
-    font-family: AvenirBold;
+    font-family: AvenirBold, 'sans-serif';
     font-size: 42px;
     font-stretch: normal;
     font-style: normal;
@@ -61,7 +61,7 @@ body,
 #home p {
     max-width: 425px;
     margin: 24px 0;
-    font-family: AvenirLight;
+    font-family: AvenirLight, 'sans-serif';
     font-size: 14px;
     font-stretch: normal;
     font-style: normal;
@@ -98,7 +98,7 @@ body,
 }
 
 #home .btn-kastil {
-    font-family: AvenirMedium;
+    font-family: AvenirMedium, 'sans-serif';
     font-size: 12px;
     font-stretch: normal;
     font-style: normal;
@@ -132,7 +132,7 @@ nav ul{
 
 nav li {
     display: inline;
-    font-family: AvenirLight;
+    font-family: AvenirLight, 'sans-serif';
     font-size: 12px;
     font-stretch: normal;
     font-style: normal;
@@ -220,7 +220,7 @@ nav .icon {
 #our-goals .label {
     text-transform: uppercase;
     color: #fff;
-    font-family: AvenirBold;
+    font-family: AvenirBold, 'sans-serif';
 }
 
 
@@ -252,7 +252,7 @@ nav .icon {
 
 #our-goals .description {
     max-width: 845px;
-    font-family: AvenirLight;
+    font-family: AvenirLight, 'sans-serif';
     font-size: 32px;
     letter-spacing: 0.88px;
     text-align: left;
@@ -262,7 +262,7 @@ nav .icon {
 }
 
 #our-goals .caption {
-    font-family: AvenirLight;
+    font-family: AvenirLight, 'sans-serif';
     color: #fff;
     font-weight: 300;
 }
@@ -275,12 +275,12 @@ nav .icon {
 
 #value .left {
     text-transform: uppercase;
-    font-family: AvenirBold;
+    font-family: AvenirBold, 'sans-serif';
     font-size: 50px;
 }
 
 #value .right{
-    font-family: AvenirLight;
+    font-family: AvenirLight, 'sans-serif';
 }
 
 .value-item{
@@ -288,7 +288,7 @@ nav .icon {
 }
 
 .value-item .label {
-    font-family: AvenirBold;
+    font-family: AvenirBold, 'sans-serif';
     text-transform: uppercase;
     font-size: 32px;
 }
@@ -300,7 +300,7 @@ nav .icon {
 
 #our-services .label {
     text-transform: uppercase;
-    font-family: AvenirBold;
+    font-family: AvenirBold, 'sans-serif';
     font-size: 50px;
     margin-bottom: 2rem;
 }
@@ -321,7 +321,7 @@ nav .icon {
     display: flex;
     align-items:center;
     justify-content: center;
-    font-family: AvenirMedium;
+    font-family: AvenirMedium, 'sans-serif';
     font-size: 18px;
     letter-spacing: 2px;
     z-index: 1;
@@ -369,7 +369,7 @@ nav .icon {
 
 #clients .label {
     text-transform: uppercase;
-    font-family: AvenirBold;
+    font-family: AvenirBold, 'sans-serif';
     font-size: 50px;
     margin-bottom: 2rem;
 }
@@ -383,7 +383,7 @@ nav .icon {
     padding: 4rem 2rem;
     border: solid 2px #fff;
     color: #fff;
-    font-family: AvenirLight;
+    font-family: AvenirLight, 'sans-serif';
     text-transform: uppercase;
     font-size: 20px;
     letter-spacing: 1px;
@@ -397,7 +397,7 @@ nav .icon {
 
 #team .label {
     text-transform: uppercase;
-    font-family: AvenirBold;
+    font-family: AvenirBold, 'sans-serif';
     font-size: 50px;
     margin-bottom: 2rem;
 }
@@ -434,7 +434,7 @@ nav .icon {
 }
 
 #team .team-name {
-    font-family: AvenirLight;
+    font-family: AvenirLight, 'sans-serif';
     font-size: 14px;
     font-stretch: normal;
     font-style: normal;
@@ -447,7 +447,7 @@ nav .icon {
 }
 
 #team .team-position {
-    font-family: AvenirMedium;
+    font-family: AvenirMedium, 'sans-serif';
     font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
@@ -467,7 +467,7 @@ nav .icon {
 }
 
 #contact .head {
-    font-family: AvenirBold;
+    font-family: AvenirBold, 'sans-serif';
     font-size: 18px;
     font-weight: 700;
     font-stretch: normal;
@@ -483,7 +483,7 @@ nav .icon {
 #contact .caption {
     margin: auto;
     max-width: 494px;
-    font-family: AvenirLight;
+    font-family: AvenirLight, 'sans-serif';
     font-size: 14px;
     font-weight: 300;
     font-stretch: normal;
@@ -496,7 +496,7 @@ nav .icon {
 }
 
 #contact label {
-    font-family: AvenirLight;
+    font-family: AvenirLight, 'sans-serif';
     font-size: 14px;
     font-weight: 300;
     font-stretch: normal;
@@ -529,7 +529,7 @@ nav .icon {
     border: none;
     border-radius: 0 4px 4px 0;
     background-color: #ffffff;
-    font-family: AvenirLight;
+    font-family: AvenirLight, 'sans-serif';
     font-weight: 700;
     font-stretch: normal;
     font-style: normal;
@@ -547,7 +547,7 @@ nav .icon {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: AvenirLight;
+    font-family: AvenirLight, 'sans-serif';
     font-size: 12px;
     font-weight: 300;
     font-stretch: normal;
@@ -591,10 +591,10 @@ nav .icon {
 }
 
 strong{
-    font-family: AvenirBold;   
+    font-family: AvenirBold, 'sans-serif';  
 }
 .font-medium {
-    font-family: AvenirMedium;
+    font-family: AvenirMedium, 'sans-serif';
 }
 
 a.color-white {
